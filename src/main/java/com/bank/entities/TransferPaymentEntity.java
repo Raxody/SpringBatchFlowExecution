@@ -25,9 +25,9 @@ public class TransferPaymentEntity {
     private Double availableBalance;
     @Column(name = "amount_paid", nullable = false)
     private Double amountPaid;
-    @Column(nullable = false)
-    private Boolean enabled;
-    @Column( nullable = false)
-    private Boolean processed;
+    @Column(name = "is_enabled", nullable = false)
+    private Boolean isEnabled;
+    @Column(name = "is_processed", nullable = false)
+    private Boolean isProcessed;
     private String error;
 }
